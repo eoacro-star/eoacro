@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>EO ACRO · A quiet luxury for everyday spaces — 대표 진단 상담 예약</title>
+<meta name="description" content="공간은 예쁜데 매출·예약·신뢰로 이어지지 않는다면. EO ACRO 대표 진단 상담으로 공간을 브랜드로 설계하세요. 55,000원 · 상담 후 계약 시 차감." />
+<meta property="og:title" content="EO ACRO · 대표 진단 상담 예약" />
+<meta property="og:description" content="A quiet luxury for everyday spaces. 30분 대표 진단 상담 55,000원." />
+<meta property="og:type" content="website" />
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+
+<style>
+:root{
+  --paper:#F0E7D6;
+  --paper-2:#E7DBC3;
+  --paper-3:#DCCFB3;
+  --ink:#16110D;
+  --ink-2:#241C15;
+  --ink-soft:#5C5044;
+  --cream:#F2E9D7;
+  --cream-soft:#C2B398;
+  --red:#B4262C;
+  --red-bright:#CF2F35;
+  --red-deep:#8C1A20;
+  --amber:#D49B4A;
+  --amber-soft:#E7C188;
+  --line:#D7C9AE;
+  --line-dark:#392E22;
+  --shadow:0 30px 60px -30px rgba(35,20,8,.4);
+  --shadow-sm:0 14px 30px -18px rgba(35,20,8,.42);
+  --r:18px;
+  --r-sm:12px;
+  --font-display:'Arial','Helvetica Neue',Helvetica,sans-serif;
+  --font-serif:'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR','Pretendard',sans-serif;
+  --font-sans:'Pretendard','Apple SD Gothic Neo','Malgun Gothic',-apple-system,system-ui,sans-serif;
+  --max:1180px;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--font-sans);
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.72;
+  -webkit-font-smoothing:antialiased;
+  letter-spacing:-.01em;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+input,select,textarea{font-family:inherit;font-size:1rem;color:var(--ink)}
+
+/* grain overlay */
+body::before{
+  content:"";position:fixed;inset:0;z-index:9998;pointer-events:none;opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 22px}
+.section{position:relative;padding:clamp(4.5rem,11vw,8.5rem) 0}
+
+/* ---- index label ---- */
+.idx{display:flex;align-items:baseline;gap:14px;margin-bottom:clamp(1.6rem,4vw,2.6rem)}
+.idx .num{font-family:var(--font-display);font-weight:600;font-size:clamp(1.8rem,5vw,2.7rem);line-height:1;color:var(--red)}
+.idx .ttl{font-size:.78rem;letter-spacing:.32em;text-transform:uppercase;font-weight:600;color:var(--ink-soft)}
+.idx .line{flex:1;height:1px;background:var(--line);align-self:center}
+
+.lead{font-family:var(--font-serif);font-weight:800;line-height:1.32;letter-spacing:-.02em;
+  font-size:clamp(1.55rem,4.6vw,2.7rem);}
+.kicker{font-size:.82rem;font-weight:600;letter-spacing:.06em;color:var(--red);margin-bottom:1rem}
+
+/* ====== HEADER ====== */
+.site-header{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:16px 22px;transition:.35s ease;
+  border-bottom:1px solid transparent;
+}
+.site-header.scrolled{
+  background:rgba(240,231,214,.85);backdrop-filter:blur(14px) saturate(1.2);
+  border-bottom:1px solid var(--line);padding:11px 22px;
+}
+.brand{display:inline-flex;flex-direction:column;gap:4px}
+.brand-top{display:flex;align-items:flex-end;gap:8px;line-height:1}
+.brand-crown{width:1.42rem;height:1.42rem;object-fit:cover;flex:none;border-radius:3px}
+.brand b{font-family:var(--font-display);font-weight:600;font-size:1.42rem;letter-spacing:.1em;line-height:1}
+.brand-sub{font-size:.56rem;letter-spacing:.04em;color:var(--ink-soft);text-transform:uppercase;text-align:center;width:100%;display:block}
+.site-header.dark .brand b,.site-header.dark .brand-sub{color:var(--cream)}
+.site-header.dark.scrolled .brand b{color:var(--ink)}
+.site-header.dark.scrolled .brand-sub{color:var(--ink-soft)}
+.nav-cta{
+  font-size:.82rem;font-weight:600;padding:9px 18px;border-radius:100px;
+  background:var(--red);color:#fff;transition:.25s;white-space:nowrap;
+}
+.nav-cta:hover{background:var(--red-bright);transform:translateY(-1px)}
+
+/* ====== HERO ====== */
+.hero{
+  position:relative;background:var(--ink);color:var(--cream);
+  padding:clamp(7.5rem,18vw,10rem) 0 clamp(4.5rem,11vw,7rem);
+  overflow:hidden;text-align:center;
+}
+.hero::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(120% 80% at 80% 4%,rgba(180,38,44,.30),transparent 52%),
+             radial-gradient(100% 85% at 6% 104%,rgba(212,155,74,.26),transparent 60%);
+}
+.hero .wrap{position:relative;z-index:2}
+
+/* brand crest */
+.brand-stamp{margin-bottom:clamp(2.2rem,6vw,3.2rem);display:inline-flex;flex-direction:column;align-items:flex-start;gap:2px}
+.bs-top{display:flex;align-items:baseline;gap:18px}
+.bs-mark{font-family:var(--font-serif);font-weight:700;letter-spacing:.04em;color:var(--cream);
+  font-size:clamp(1.35rem,3.6vw,1.85rem);line-height:1}
+.bs-tag{font-size:clamp(.78rem,2vw,.9rem);
+  color:var(--cream-soft);letter-spacing:.02em;line-height:1.5}
+.bs-sig{font-family:var(--font-sans);font-size:.82rem;color:var(--cream-soft);
+  letter-spacing:.12em;line-height:1}
+
+.hero-intro{display:flex;align-items:flex-start;gap:14px;margin-bottom:clamp(1.6rem,5vw,2.2rem);justify-content:center}
+.hero-top{
+  font-size:.82rem;line-height:1.75;color:var(--cream-soft);
+  border-left:2px solid var(--red);padding:6px 0 6px 16px;
+}
+.hero h1{
+  font-family:var(--font-serif);font-weight:800;letter-spacing:-.025em;
+  font-size:clamp(2.15rem,7.4vw,4.5rem);line-height:1.18;margin-bottom:1.4rem;
+}
+.hero h1 .accent{color:var(--red-bright)}
+.hero-sub{font-size:clamp(1rem,2.4vw,1.18rem);color:#DBD0BD;max-width:50ch;margin:0 auto .9rem;line-height:1.75}
+.hero-tags{font-size:.82rem;color:var(--cream-soft);letter-spacing:.02em;margin-bottom:clamp(2.2rem,6vw,3rem)}
+.hero-tags span{color:var(--cream)}
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  font-weight:700;letter-spacing:-.01em;border-radius:100px;transition:.25s ease;
+  text-align:center;
+}
+.btn-primary{background:var(--red);color:#fff;padding:18px 30px;font-size:1.04rem;
+  box-shadow:0 18px 42px -16px rgba(180,38,44,.7)}
+.btn-primary:hover{background:var(--red-bright);transform:translateY(-2px);box-shadow:0 22px 48px -16px rgba(180,38,44,.8)}
+.btn-primary .price{font-family:var(--font-display);font-weight:600;letter-spacing:.01em}
+.btn-block{display:flex;width:100%}
+.hero-cta-note{font-size:.82rem;color:var(--cream-soft);margin-top:14px;display:flex;align-items:center;gap:7px;justify-content:center}
+.dot{width:5px;height:5px;border-radius:50%;background:var(--amber);display:inline-block}
+
+
+/* ====== PROBLEM / CHECKLIST ====== */
+.problem{background:var(--paper)}
+.check{
+  display:flex;align-items:flex-start;gap:16px;padding:20px 4px;
+  border-bottom:1px solid var(--line);cursor:pointer;transition:.2s;
+}
+.check:first-of-type{border-top:1px solid var(--line)}
+.check:hover{padding-left:10px}
+.check .box{
+  flex:none;width:26px;height:26px;border:1.6px solid var(--ink-soft);border-radius:7px;
+  display:grid;place-items:center;margin-top:2px;transition:.2s;
+}
+.check .box svg{width:15px;height:15px;stroke:#fff;stroke-width:3;fill:none;
+  stroke-dasharray:24;stroke-dashoffset:24;transition:.3s}
+.check.on .box{background:var(--red);border-color:var(--red)}
+.check.on .box svg{stroke-dashoffset:0}
+.check p{font-size:clamp(1.02rem,2.6vw,1.22rem);font-weight:500;transition:.2s}
+.check.on p{color:var(--ink-soft)}
+.check-note{margin-top:2rem;font-size:.95rem;color:var(--ink-soft)}
+.check-note a{color:var(--red);font-weight:600;border-bottom:1px solid var(--red);padding-bottom:1px}
+
+/* ====== SOLUTION ====== */
+.solution{background:var(--ink);color:var(--cream)}
+.solution .idx .ttl{color:var(--cream-soft)}
+.solution .idx .line{background:var(--line-dark)}
+.solution .lead{color:var(--cream)}
+.sol-grid{display:grid;gap:1px;background:var(--line-dark);border:1px solid var(--line-dark);
+  border-radius:var(--r);overflow:hidden;margin-top:clamp(2rem,5vw,3rem)}
+.sol-item{background:var(--ink);padding:clamp(1.6rem,4vw,2.3rem);transition:.3s}
+.sol-item:hover{background:var(--ink-2)}
+.sol-item .n{font-family:var(--font-display);font-weight:500;
+  font-size:2.8rem;color:var(--amber);line-height:1;margin-bottom:.5rem;display:block}
+.sol-item h3{font-size:1.16rem;font-weight:700;margin-bottom:.4rem}
+.sol-item p{font-size:.92rem;color:var(--cream-soft);line-height:1.6}
+@media(min-width:640px){.sol-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:980px){.sol-grid{grid-template-columns:repeat(3,1fr)}
+  .sol-item:nth-child(4),.sol-item:nth-child(5){grid-column:span 1}}
+
+/* ====== PORTFOLIO ====== */
+.portfolio{background:var(--paper-2)}
+.pf-grid{display:grid;gap:18px;margin-top:clamp(2rem,5vw,3rem)}
+@media(min-width:760px){.pf-grid{grid-template-columns:repeat(3,1fr)}}
+.pf-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;
+  box-shadow:var(--shadow-sm);transition:.3s}
+.pf-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.pf-img{aspect-ratio:4/5;position:relative;display:grid;place-items:center;overflow:hidden}
+.pf-img::after{content:"";position:absolute;inset:0;opacity:.08;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.pf-1{background:linear-gradient(150deg,#3a2c1f,#231910)}
+.pf-2{background:linear-gradient(150deg,#cf9a4f,#9a5e22)}
+.pf-3{background:linear-gradient(150deg,#b6a282,#6f5f49)}
+.pf-img .ph{position:relative;z-index:1;text-align:center;color:rgba(255,248,236,.88)}
+.pf-img .ph .icon{width:38px;height:38px;margin:0 auto 10px;stroke:currentColor;stroke-width:1.4;fill:none;opacity:.7}
+.pf-img .ph small{font-size:.66rem;letter-spacing:.28em;text-transform:uppercase;opacity:.7}
+.pf-tag{position:absolute;top:14px;left:14px;z-index:2;background:rgba(22,17,13,.55);backdrop-filter:blur(6px);
+  color:#fff;font-size:.7rem;font-weight:600;letter-spacing:.04em;padding:6px 11px;border-radius:100px}
+.pf-body{padding:18px 18px 22px}
+.pf-body .ps{font-size:.95rem;font-weight:600;line-height:1.5}
+.pf-body .arrow{color:var(--red);font-weight:700}
+
+/* ====== PRICING ====== */
+.pricing{background:var(--paper)}
+.price-grid{display:grid;gap:18px;margin-top:clamp(2rem,5vw,3rem)}
+@media(min-width:820px){.price-grid{grid-template-columns:repeat(3,1fr);align-items:stretch}}
+.price-card{position:relative;background:var(--paper-2);border:1px solid var(--line);border-radius:var(--r);
+  padding:clamp(1.7rem,3.5vw,2.2rem);display:flex;flex-direction:column;transition:.3s}
+.price-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.price-card.feat{background:var(--ink);color:var(--cream);border-color:var(--ink);box-shadow:var(--shadow)}
+.badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--red);color:#fff;
+  font-size:.7rem;font-weight:700;letter-spacing:.04em;padding:6px 16px;border-radius:100px;white-space:nowrap}
+.price-card .pname{font-size:1.04rem;font-weight:700;margin-bottom:.5rem}
+.price-card .pcost{font-family:var(--font-display);font-weight:600;
+  font-size:clamp(2.1rem,4.8vw,2.7rem);line-height:1.1;margin-bottom:.2rem;letter-spacing:-.01em}
+.price-card .pcost em{font-style:normal;font-size:.95rem;font-family:var(--font-sans);font-weight:600;color:var(--ink-soft)}
+.price-card.feat .pcost em{color:var(--cream-soft)}
+.price-card .punit{font-size:.82rem;color:var(--ink-soft);margin-bottom:1.3rem}
+.price-card.feat .punit{color:var(--cream-soft)}
+.price-card .pdesc{font-size:.92rem;line-height:1.65;color:var(--ink-soft);flex:1;margin-bottom:1.4rem}
+.price-card.feat .pdesc{color:#DBD0BD}
+.price-card .pbtn{margin-top:auto;text-align:center;font-weight:700;font-size:.92rem;padding:13px;border-radius:100px;
+  border:1.5px solid var(--ink);transition:.25s}
+.price-card .pbtn:hover{background:var(--ink);color:var(--cream)}
+.price-card.feat .pbtn{background:var(--red);border-color:var(--red);color:#fff}
+.price-card.feat .pbtn:hover{background:var(--red-bright)}
+.price-note{margin-top:1.6rem;font-size:.85rem;color:var(--ink-soft);line-height:1.6;
+  padding:14px 16px;background:var(--paper-3);border-radius:var(--r-sm);border:1px solid var(--line)}
+
+/* ====== CLOSING COPY ====== */
+.closing{background:var(--ink);color:var(--cream);text-align:center;
+  padding:clamp(4.5rem,12vw,7.5rem) 0}
+.closing .wrap{max-width:760px}
+.closing-crown{width:42px;height:42px;object-fit:cover;margin:0 auto 1.7rem;display:block;border-radius:7px}
+.closing p{font-family:var(--font-serif);font-weight:700;line-height:1.5;letter-spacing:-.02em;
+  font-size:clamp(1.5rem,4.6vw,2.5rem)}
+.closing p .hl{color:var(--red-bright)}
+.closing .sm{font-family:var(--font-sans);font-weight:400;font-size:clamp(1rem,2.4vw,1.15rem);
+  color:#D2C8B4;margin-top:1.4rem;line-height:1.7}
+
+/* ====== BOOKING / PAYMENT ====== */
+.booking{background:var(--paper-2);scroll-margin-top:80px}
+.book-grid{display:grid;gap:24px;margin-top:clamp(2rem,5vw,3rem)}
+@media(min-width:920px){.book-grid{grid-template-columns:0.92fr 1.08fr;align-items:start;gap:34px}}
+
+/* order summary card */
+.order{background:var(--ink);color:var(--cream);border-radius:var(--r);padding:clamp(1.8rem,4vw,2.4rem);
+  box-shadow:var(--shadow);position:relative;overflow:hidden}
+.order::after{content:"";position:absolute;right:-40px;top:-40px;width:190px;height:190px;border-radius:50%;
+  background:radial-gradient(circle,rgba(212,155,74,.38),transparent 70%)}
+.order h3{position:relative;font-size:.78rem;letter-spacing:.28em;text-transform:uppercase;color:var(--cream-soft);margin-bottom:1.2rem}
+.order .oname{position:relative;font-family:var(--font-serif);font-weight:800;font-size:1.5rem;line-height:1.3;margin-bottom:.4rem}
+.order .obig{position:relative;font-family:var(--font-display);font-weight:600;
+  font-size:clamp(2.6rem,7vw,3.3rem);line-height:1;letter-spacing:-.01em;margin:.5rem 0 1.4rem}
+.order .obig em{font-style:normal;font-size:1.05rem;font-family:var(--font-sans);font-weight:600;color:var(--cream-soft)}
+.order dl{position:relative;border-top:1px solid var(--line-dark);padding-top:1.2rem;display:grid;gap:.7rem}
+.order .row{display:flex;justify-content:space-between;gap:14px;font-size:.92rem;align-items:flex-start}
+.order .row dt{color:var(--cream-soft);flex:none}
+.order .row dd{text-align:right;color:var(--cream);font-weight:500}
+.order .deduct{position:relative;margin-top:1.3rem;background:rgba(180,38,44,.16);border:1px solid rgba(212,155,74,.4);
+  border-radius:var(--r-sm);padding:12px 14px;font-size:.85rem;line-height:1.55;color:var(--amber-soft)}
+
+/* form */
+.form-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);
+  padding:clamp(1.6rem,4vw,2.2rem);box-shadow:var(--shadow-sm)}
+.form-card .fh{font-weight:700;font-size:1.05rem;margin-bottom:.3rem}
+.form-card .fsub{font-size:.85rem;color:var(--ink-soft);margin-bottom:1.5rem}
+.field{margin-bottom:1.1rem}
+.field label{display:block;font-size:.82rem;font-weight:600;margin-bottom:.45rem;color:var(--ink-2)}
+.field label .req{color:var(--red)}
+.field input,.field select,.field textarea{
+  width:100%;padding:13px 15px;border:1.4px solid var(--line);border-radius:var(--r-sm);
+  background:var(--paper-2);transition:.2s;outline:none;
+}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--red);background:#fff;
+  box-shadow:0 0 0 3px rgba(180,38,44,.12)}
+.field textarea{resize:vertical;min-height:54px;line-height:1.6}
+.field.err input,.field.err select{border-color:#c0392b;background:#fdf0ee}
+.field .msg{display:none;font-size:.76rem;color:#c0392b;margin-top:.4rem}
+.field.err .msg{display:block}
+.row2{display:grid;gap:1.1rem}
+@media(min-width:520px){.row2{grid-template-columns:1fr 1fr}}
+
+/* method selector */
+.method-label{font-size:.82rem;font-weight:600;margin-bottom:.5rem;color:var(--ink-2)}
+.methods{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:1.4rem}
+.methods .m{border:1.4px solid var(--line);border-radius:var(--r-sm);padding:13px 8px;text-align:center;
+  font-size:.88rem;font-weight:600;cursor:pointer;transition:.2s;background:var(--paper-2);color:var(--ink-soft)}
+.methods .m:hover{border-color:var(--red)}
+.methods .m.on{background:var(--ink);color:var(--cream);border-color:var(--ink)}
+.methods .m small{display:block;font-size:.66rem;font-weight:500;opacity:.7;margin-top:3px}
+
+/* pay buttons */
+.pay-stack{display:grid;gap:10px;margin-top:1.6rem}
+.pay-btn{display:flex;align-items:center;justify-content:center;gap:9px;padding:16px;border-radius:14px;
+  font-weight:700;font-size:1rem;transition:.22s}
+.pay-btn:hover{transform:translateY(-2px)}
+.pay-naver{background:#03C75A;color:#fff;box-shadow:0 14px 30px -16px rgba(3,199,90,.8)}
+.pay-naver:hover{background:#02b050}
+.pay-card{background:var(--red);color:#fff;box-shadow:0 14px 30px -16px rgba(180,38,44,.75)}
+.pay-card:hover{background:var(--red-bright)}
+.pay-kakao{background:#FEE500;color:#3A1D1D;box-shadow:0 14px 30px -16px rgba(254,229,0,.8)}
+.pay-kakao:hover{background:#f2da00}
+.pay-secure{display:flex;align-items:center;justify-content:center;gap:7px;font-size:.78rem;color:var(--ink-soft);margin-top:14px}
+.pay-secure svg{width:14px;height:14px;stroke:var(--amber);stroke-width:2;fill:none}
+.pg-note{font-size:.75rem;color:var(--ink-soft);text-align:center;margin-top:10px;line-height:1.5;opacity:.85}
+
+/* ====== FAQ ====== */
+.faq{background:var(--paper)}
+.faq-list{margin-top:clamp(2rem,5vw,3rem);border-top:1px solid var(--line)}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;
+  padding:22px 4px;text-align:left;font-size:clamp(1rem,2.6vw,1.12rem);font-weight:600;transition:.2s}
+.faq-q:hover{color:var(--red)}
+.faq-q .sign{flex:none;width:24px;height:24px;position:relative;transition:.3s}
+.faq-q .sign::before,.faq-q .sign::after{content:"";position:absolute;background:var(--red);border-radius:2px;
+  top:50%;left:50%;transform:translate(-50%,-50%)}
+.faq-q .sign::before{width:14px;height:2px}
+.faq-q .sign::after{width:2px;height:14px;transition:.3s}
+.faq-item.open .sign::after{transform:translate(-50%,-50%) rotate(90deg);opacity:0}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-a p{padding:0 4px 22px;font-size:.96rem;color:var(--ink-soft);line-height:1.7}
+
+/* ====== FOOTER ====== */
+.footer{background:var(--ink);color:var(--cream);padding:clamp(3.5rem,9vw,5.5rem) 0 7rem}
+.footer-top{display:grid;gap:30px;margin-bottom:2.5rem}
+@media(min-width:760px){.footer-top{grid-template-columns:1fr auto;align-items:center}}
+.footer .fbrand{display:inline-flex;flex-direction:column;gap:3px}
+.footer .fbrand .fbrand-top{display:flex;align-items:flex-end;gap:10px;line-height:1}
+.footer .fbrand .fcrown{height:2rem;width:auto;object-fit:cover;flex:none;border-radius:5px}
+.footer .fbrand b{font-family:var(--font-display);font-weight:700;font-size:2rem;letter-spacing:.1em;line-height:1}
+.footer .fbrand p{font-size:.88rem;color:var(--cream-soft);margin-top:0;max-width:42ch;line-height:1.4}
+.footer .fcta{display:inline-flex;align-items:center;gap:9px;background:var(--red);color:#fff;
+  padding:16px 26px;border-radius:100px;font-weight:700;transition:.25s}
+.footer .fcta:hover{background:var(--red-bright);transform:translateY(-2px)}
+.contact{border-top:1px solid var(--line-dark);padding-top:1.8rem;display:flex;flex-wrap:wrap;gap:10px 26px;
+  font-size:.9rem;color:var(--cream-soft)}
+.contact a{display:inline-flex;align-items:center;gap:8px;transition:.2s}
+.contact a:hover{color:var(--amber)}
+.contact svg{width:15px;height:15px;stroke:currentColor;stroke-width:1.7;fill:none}
+.copyright{margin-top:2rem;font-size:.76rem;color:#8a7e6c}
+
+/* ====== STICKY BOTTOM CTA ====== */
+.sticky-cta{
+  position:fixed;left:0;right:0;bottom:0;z-index:900;
+  background:rgba(22,17,13,.93);backdrop-filter:blur(14px);border-top:1px solid var(--line-dark);
+  padding:11px 16px calc(11px + env(safe-area-inset-bottom));
+  display:flex;align-items:center;gap:14px;justify-content:space-between;
+  transform:translateY(120%);transition:transform .4s cubic-bezier(.2,.8,.2,1);
+}
+.sticky-cta.show{transform:translateY(0)}
+.sticky-cta .si{color:var(--cream);line-height:1.2;min-width:0}
+.sticky-cta .si .p1{font-size:.74rem;color:var(--cream-soft)}
+.sticky-cta .si .p2{font-family:var(--font-display);font-weight:600;font-size:1.25rem;letter-spacing:.01em}
+.sticky-cta .si .p2 em{font-style:normal;font-size:.78rem;font-family:var(--font-sans);font-weight:500;color:var(--cream-soft)}
+.sticky-cta .sb{flex:none;background:var(--red);color:#fff;font-weight:700;font-size:.92rem;
+  padding:14px 20px;border-radius:100px;transition:.25s;white-space:nowrap}
+.sticky-cta .sb:hover{background:var(--red-bright)}
+
+/* ====== MODAL ====== */
+.overlay{position:fixed;inset:0;z-index:2000;background:rgba(18,11,6,.62);backdrop-filter:blur(5px);
+  display:flex;align-items:center;justify-content:center;padding:18px;opacity:0;visibility:hidden;transition:.3s}
+.overlay.show{opacity:1;visibility:visible}
+.modal{background:var(--paper);width:100%;max-width:440px;border-radius:22px;overflow:hidden;
+  box-shadow:0 40px 80px -20px rgba(0,0,0,.5);transform:translateY(20px) scale(.97);transition:.35s;
+  max-height:92vh;display:flex;flex-direction:column}
+.overlay.show .modal{transform:translateY(0) scale(1)}
+.modal-head{padding:22px 24px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+.modal-head h4{font-weight:700;font-size:1.1rem}
+.modal-close{width:34px;height:34px;border-radius:50%;background:var(--paper-2);display:grid;place-items:center;transition:.2s}
+.modal-close:hover{background:var(--paper-3)}
+.modal-close svg{width:16px;height:16px;stroke:var(--ink);stroke-width:2}
+.modal-body{padding:24px;overflow-y:auto}
+.step{display:none}
+.step.active{display:block;animation:fade .4s ease}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+.osum{background:var(--ink);color:var(--cream);border-radius:14px;padding:18px 20px;margin-bottom:18px}
+.osum .l{display:flex;justify-content:space-between;font-size:.9rem;padding:5px 0;gap:14px}
+.osum .l dt{color:var(--cream-soft)}
+.osum .l.tot{border-top:1px solid var(--line-dark);margin-top:8px;padding-top:12px;font-weight:700;font-size:1.05rem}
+.osum .l.tot dd{font-family:var(--font-display);font-weight:600;font-size:1.15rem;color:var(--amber)}
+.mch{display:flex;align-items:center;gap:10px;padding:14px 16px;border:1.5px solid var(--red);border-radius:12px;
+  background:rgba(180,38,44,.07);font-weight:600;font-size:.95rem;margin-bottom:18px}
+.mch .chip{font-size:.74rem;background:var(--red);color:#fff;padding:3px 10px;border-radius:100px;font-weight:700}
+.modal .btn-go{width:100%;background:var(--red);color:#fff;padding:16px;border-radius:12px;font-weight:700;font-size:1rem;transition:.25s}
+.modal .btn-go:hover{background:var(--red-bright)}
+.modal .btn-ghost{width:100%;padding:14px;border-radius:12px;font-weight:600;color:var(--ink-soft);margin-top:8px;transition:.2s}
+.modal .btn-ghost:hover{background:var(--paper-2)}
+.fineprint{font-size:.78rem;color:var(--ink-soft);text-align:center;margin-top:14px;line-height:1.55}
+
+/* processing */
+.proc{text-align:center;padding:30px 0}
+.spinner{width:54px;height:54px;border:4px solid var(--line);border-top-color:var(--red);border-radius:50%;
+  margin:0 auto 22px;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.proc p{font-weight:600;font-size:1.05rem}
+.proc small{color:var(--ink-soft);display:block;margin-top:6px}
+
+/* success */
+.done-ic{width:72px;height:72px;border-radius:50%;background:var(--amber);display:grid;place-items:center;margin:6px auto 18px;
+  animation:pop .5s cubic-bezier(.2,1.3,.4,1)}
+@keyframes pop{from{transform:scale(0)}to{transform:scale(1)}}
+.done-ic svg{width:34px;height:34px;stroke:#fff;stroke-width:3;fill:none}
+.done h3{text-align:center;font-family:var(--font-serif);font-weight:800;font-size:1.5rem;margin-bottom:.5rem}
+.done .dtxt{text-align:center;color:var(--ink-soft);font-size:.94rem;line-height:1.6;margin-bottom:18px}
+.ono{background:var(--paper-2);border:1px dashed var(--line);border-radius:12px;padding:14px;text-align:center;margin-bottom:18px}
+.ono small{font-size:.74rem;color:var(--ink-soft);letter-spacing:.04em}
+.ono b{display:block;font-family:var(--font-display);font-weight:600;font-size:1.4rem;letter-spacing:.04em;margin-top:4px}
+.done-actions{display:grid;gap:9px}
+.done-actions a,.done-actions button{display:flex;align-items:center;justify-content:center;gap:8px;
+  padding:14px;border-radius:12px;font-weight:700;font-size:.94rem;transition:.22s}
+.da-kakao{background:#FEE500;color:#3A1D1D}.da-kakao:hover{background:#f2da00}
+.da-copy{background:var(--ink);color:var(--cream)}.da-copy:hover{background:var(--ink-2)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}*{scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header dark" id="header">
+  <a class="brand" href="#top">
+    <span class="brand-top">
+      <img src="eoacro logo_ square.png" class="brand-crown" alt="EO ACRO" />
+      <b>EO ACRO</b>
+    </span>
+    <small class="brand-sub">A quiet luxury for everyday spaces</small>
+  </a>
+  <a href="#booking" class="nav-cta">상담 예약</a>
+</header>
+
+<!-- 01 · HERO -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-intro rv">
+      <div class="brand-stamp">
+        <div class="bs-mark">이오 아크로</div>
+      </div>
+      <div class="hero-top">공간을 예쁘게 꾸미는 것에서 끝내지 않습니다.<br>방문자가 머물고, 촬영하고, 예약하고 싶어지는 공간으로 설계합니다.</div>
+    </div>
+    <h1 class="rv">공간은 있는데,<br><span style="white-space:nowrap"><span class="accent">브랜드처럼</span> 보이지 않는다면.</span></h1>
+    <p class="hero-sub rv">EO ACRO 대표 진단을 먼저 받아보세요.<br>인테리어 · 스타일링 · 플랜트 · 오브제 · 향까지 한 번에 점검합니다.</p>
+    <p class="hero-tags rv"><span>상업공간 · 병원 · 카페 · 쇼룸 · 프라이빗 스튜디오</span></p>
+    <div class="rv">
+      <a href="#booking" class="btn btn-primary"><span class="price">55,000원</span> 대표 진단 상담 예약하기</a>
+      <p class="hero-cta-note"><span class="dot"></span> 상담 후 계약 진행 시 상담비 차감</p>
+    </div>
+  </div>
+</section>
+
+<!-- 02 · PROBLEM -->
+<section class="section problem">
+  <div class="wrap">
+    <div class="idx rv"><span class="num">02</span><span class="ttl">Check</span><span class="line"></span></div>
+    <h2 class="lead rv">이런 상태라면,<br>견적보다 먼저 방향 진단이 필요합니다.</h2>
+    <div class="checklist rv" style="margin-top:clamp(2rem,5vw,3rem)">
+      <div class="check"><span class="box"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span><p>공간은 꾸몄는데 사진이 예쁘게 안 나온다.</p></div>
+      <div class="check"><span class="box"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span><p>인테리어를 했는데 브랜드 무드가 약하다.</p></div>
+      <div class="check"><span class="box"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span><p>손님이 머무는 동선과 시선 포인트가 없다.</p></div>
+      <div class="check"><span class="box"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span><p>예산은 쓰는데 어디에 힘을 줘야 할지 모르겠다.</p></div>
+      <div class="check"><span class="box"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span><p>공사 업체와 말이 안 통해서 기준 잡기가 어렵다.</p></div>
+    </div>
+    <p class="check-note rv">하나라도 해당된다면 → <a href="#booking">30분 대표 진단부터 받아보세요</a></p>
+  </div>
+</section>
+
+<!-- 03 · SOLUTION -->
+<section class="section solution">
+  <div class="wrap">
+    <div class="idx rv"><span class="num">03</span><span class="ttl">Diagnosis</span><span class="line"></span></div>
+    <h2 class="lead rv">EO ACRO 대표 진단에서<br>보는 5가지.</h2>
+    <div class="sol-grid rv">
+      <div class="sol-item"><span class="n">01</span><h3>공간의 첫인상</h3><p>들어오자마자 보이는 장면</p></div>
+      <div class="sol-item"><span class="n">02</span><h3>고객 동선</h3><p>머무름과 결제로 이어지는 흐름</p></div>
+      <div class="sol-item"><span class="n">03</span><h3>브랜드 무드</h3><p>컬러, 소재, 조명, 오브제 톤</p></div>
+      <div class="sol-item"><span class="n">04</span><h3>촬영 포인트</h3><p>인스타·네이버에 노출될 장면</p></div>
+      <div class="sol-item"><span class="n">05</span><h3>예산 우선순위</h3><p>돈을 써야 할 곳과 줄일 곳</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 · PORTFOLIO -->
+<section class="section portfolio">
+  <div class="wrap">
+    <div class="idx rv"><span class="num">04</span><span class="ttl">Work</span><span class="line"></span></div>
+    <h2 class="lead rv">문제를 풀어낸 공간들.</h2>
+    <div class="pf-grid rv">
+      <div class="pf-card">
+        <div class="pf-img pf-1"><span class="pf-tag">병원 · 상담</span><div class="ph"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><small>이미지 교체 영역</small></div></div>
+        <div class="pf-body"><p class="ps">신뢰감을 만드는 리셉션 <span class="arrow">→</span> 첫 상담 전환</p></div>
+      </div>
+      <div class="pf-card">
+        <div class="pf-img pf-2"><span class="pf-tag">카페 · 요식업</span><div class="ph"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><small>이미지 교체 영역</small></div></div>
+        <div class="pf-body"><p class="ps">머무름이 생기는 테이블 동선 <span class="arrow">→</span> 체류시간</p></div>
+      </div>
+      <div class="pf-card">
+        <div class="pf-img pf-3"><span class="pf-tag">스튜디오 · 쇼룸</span><div class="ph"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><small>이미지 교체 영역</small></div></div>
+        <div class="pf-body"><p class="ps">촬영되는 브랜드 장면 <span class="arrow">→</span> 자연 노출</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 · PRICING -->
+<section class="section pricing">
+  <div class="wrap">
+    <div class="idx rv"><span class="num">05</span><span class="ttl">Menu</span><span class="line"></span></div>
+    <h2 class="lead rv">상담은 문의가 아니라,<br>고를 수 있는 상품입니다.</h2>
+    <div class="price-grid rv">
+      <div class="price-card feat">
+        <span class="badge">가장 가벼운 시작</span>
+        <div class="pname">대표 진단 상담</div>
+        <div class="pcost">55,000<em>원</em></div>
+        <div class="punit">30분 · 전화 / 화상</div>
+        <p class="pdesc">문제 진단 + 방향 제안. 시공 전에 방향부터 정확히 잡습니다.</p>
+        <button class="pbtn" data-goto="booking">이 상품 예약하기</button>
+      </div>
+      <div class="price-card">
+        <div class="pname">현장 방문 진단</div>
+        <div class="pcost">330,000<em>원</em></div>
+        <div class="punit">60분 · 현장 체크</div>
+        <p class="pdesc">동선 · 무드 · 예산 우선순위를 현장에서 직접 점검합니다.</p>
+        <button class="pbtn" data-goto="booking">상담으로 문의</button>
+      </div>
+      <div class="price-card">
+        <div class="pname">공간 제안서 패키지</div>
+        <div class="pcost">1,100,000<em>원~</em></div>
+        <div class="punit">계약 전 기획안</div>
+        <p class="pdesc">무드보드 + 방향 제안. 시공 전 한눈에 보는 공간 기획안.</p>
+        <button class="pbtn" data-goto="booking">상담으로 문의</button>
+      </div>
+    </div>
+    <p class="price-note rv">※ 상담비와 제안서 비용은 시공 / 디렉팅 계약 진행 시 일부 또는 전액 차감 가능합니다.</p>
+  </div>
+</section>
+
+<!-- 07 · CLOSING COPY (결제 직전) -->
+<section class="closing">
+  <div class="wrap rv">
+    <img src="eoacro logo_ square.png" class="closing-crown" alt="EO ACRO" />
+    <p>공간은 한 번 방향을 잘못 잡으면,<br><span class="hl">공사비보다 더 큰 비용</span>을 잃습니다.</p>
+    <p class="sm">시공 전에 30분만 먼저 점검하세요.<br>예쁜 공간이 아니라, <b>선택받는 공간</b>으로 가야 합니다.</p>
+  </div>
+</section>
+
+<!-- 06 · BOOKING / PAYMENT -->
+<section class="section booking" id="booking">
+  <div class="wrap">
+    <div class="idx rv"><span class="num">06</span><span class="ttl">Booking</span><span class="line"></span></div>
+    <h2 class="lead rv">대표 진단 상담 결제.</h2>
+    <div class="book-grid">
+      <!-- order summary -->
+      <aside class="order rv">
+        <h3>Order Summary</h3>
+        <div class="oname">EO ACRO 대표 진단 상담</div>
+        <div class="obig">55,000<em> 원</em></div>
+        <dl>
+          <div class="row"><dt>상담 방식</dt><dd id="sumMethod">전화 상담</dd></div>
+          <div class="row"><dt>소요 시간</dt><dd>30분</dd></div>
+          <div class="row"><dt>제공 내용</dt><dd style="max-width:62%">공간 문제 진단 · 개선 방향 · 예산 우선순위</dd></div>
+        </dl>
+        <div class="deduct">계약 진행 시 상담비 55,000원은 시공·디렉팅 비용에서 전액 차감됩니다.</div>
+      </aside>
+
+      <!-- form + pay -->
+      <div class="form-card rv">
+        <div class="fh">예약 정보 입력</div>
+        <p class="fsub">아래 정보를 남기시면 대표가 직접 일정과 진단을 진행합니다.</p>
+
+        <div class="method-label">상담 방식 선택 <span style="color:var(--red)">*</span></div>
+        <div class="methods" id="methods">
+          <div class="m on" data-m="전화 상담">전화<small>30분</small></div>
+          <div class="m" data-m="스튜디오 상담">스튜디오<small>방문</small></div>
+        </div>
+
+        <div class="row2">
+          <div class="field"><label>성함 / 업체명 <span class="req">*</span></label><input id="f-name" type="text" placeholder="홍길동 / OO카페" /><span class="msg">성함 또는 업체명을 입력해 주세요.</span></div>
+          <div class="field"><label>연락처 <span class="req">*</span></label><input id="f-phone" type="tel" inputmode="numeric" placeholder="010-0000-0000" /><span class="msg">연락 가능한 번호를 입력해 주세요.</span></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label>공간 유형</label>
+            <select id="f-type">
+              <option value="">선택</option>
+              <option>병원</option><option>카페</option><option>식당</option>
+              <option>쇼룸</option><option>주거</option><option>기타</option>
+            </select>
+          </div>
+          <div class="field"><label>면적 (선택)</label><input id="f-area" type="text" placeholder="예: 33평 / 110㎡" /></div>
+        </div>
+        <div class="field"><label>현재 고민 한 줄</label><textarea id="f-concern" placeholder="예: 인테리어는 했는데 사진이 예쁘게 안 나와요."></textarea></div>
+        <div class="field"><label>희망 상담 방식과 시간</label><input id="f-time" type="text" placeholder="예: 평일 저녁 7시 이후 전화" /></div>
+
+        <div class="pay-stack">
+          <button class="pay-btn pay-naver" data-pay="네이버페이">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff"><path d="M7 4h4.2l3.6 5.5V4H19v16h-4.2L11.2 14.5V20H7z"/></svg>
+            네이버페이로 결제
+          </button>
+          <button class="pay-btn pay-card" data-pay="카드 결제">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+            카드로 결제
+          </button>
+          <button class="pay-btn pay-kakao" data-pay="카카오톡 문의">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#3A1D1D"><path d="M12 3C6.5 3 2 6.6 2 11c0 2.8 1.9 5.3 4.7 6.7-.2.7-.7 2.6-.8 3 0 0 0 .3.2.4.2 0 .4 0 .4-.1.3-.2 2.8-1.9 3.6-2.5.6.1 1.2.1 1.9.1 5.5 0 10-3.6 10-8S17.5 3 12 3z"/></svg>
+            카카오톡으로 일정 문의
+          </button>
+        </div>
+        <div class="pay-secure"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg> 입력 정보는 상담 목적 외에 사용되지 않습니다.</div>
+        <p class="pg-note">결제 버튼을 누르면 예약 내용이 확인된 후 결제·일정이 진행됩니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 08 · FAQ -->
+<section class="section faq">
+  <div class="wrap">
+    <div class="idx rv"><span class="num">08</span><span class="ttl">FAQ</span><span class="line"></span></div>
+    <h2 class="lead rv">자주 묻는 질문.</h2>
+    <div class="faq-list rv">
+      <div class="faq-item"><button class="faq-q">상담만 받아도 되나요?<span class="sign"></span></button><div class="faq-a"><p>가능합니다. 방향 진단만 원하셔도 됩니다. 시공·계약을 전제로 하지 않습니다.</p></div></div>
+      <div class="faq-item"><button class="faq-q">시공 계약을 꼭 해야 하나요?<span class="sign"></span></button><div class="faq-a"><p>아닙니다. 상담 후 편하게 결정하시면 됩니다. 강매하지 않습니다.</p></div></div>
+      <div class="faq-item"><button class="faq-q">상담비는 차감되나요?<span class="sign"></span></button><div class="faq-a"><p>네. 계약 진행 시 상담비를 시공·디렉팅 비용에서 차감해드립니다.</p></div></div>
+      <div class="faq-item"><button class="faq-q">지방도 가능한가요?<span class="sign"></span></button><div class="faq-a"><p>1차 상담(전화·화상) 후 현장 조건에 따라 방문 가능 여부를 안내드립니다.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="fbrand">
+        <div class="fbrand-top">
+          <img src="eoacro logo_ square.png" class="fcrown" alt="EO ACRO" />
+          <b>EO ACRO</b>
+        </div>
+        <p>Spatial Design · Experience + Space Styling Classes · Fragrance Sachets &amp; Candles</p>
+      </div>
+      <a href="#booking" class="fcta">지금 대표 진단 상담 예약하기 →</a>
+    </div>
+    <div class="contact">
+      <span>EO ACRO / 김지형 대표</span>
+      <span><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor" stroke="none"/></svg>서울시 성동구 성수일로 111, 1층 105호</span>
+      <a href="tel:01099830025"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.6A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/></svg>010-9983-0025</a>
+      <a href="https://instagram.com/eoacro" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>@eoacro</a>
+      <a href="mailto:eoacro@gmail.com"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>eoacro@gmail.com</a>
+    </div>
+    <p class="copyright">© 2026 EO ACRO. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- STICKY BOTTOM CTA (하단 고정) -->
+<div class="sticky-cta" id="stickyCta">
+  <div class="si">
+    <div class="p1">대표 진단 상담</div>
+    <div class="p2">55,000원 <em>· 결제 → 일정 확인 → 대표 직접 상담</em></div>
+  </div>
+  <a href="#booking" class="sb">지금 예약하기</a>
+</div>
+
+<!-- CHECKOUT MODAL -->
+<div class="overlay" id="overlay">
+  <div class="modal">
+    <div class="modal-head">
+      <h4 id="modalTitle">주문 확인</h4>
+      <button class="modal-close" id="modalClose" aria-label="닫기"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <div class="modal-body">
+      <!-- step 1: confirm -->
+      <div class="step active" id="step-confirm">
+        <div class="mch"><span class="chip" id="chMethodChip">결제수단</span><span id="chMethodName">선택한 결제 방식</span></div>
+        <dl class="osum">
+          <div class="l"><dt>상품</dt><dd>대표 진단 상담</dd></div>
+          <div class="l"><dt>상담 방식</dt><dd id="osMethod">전화 상담</dd></div>
+          <div class="l"><dt>예약자</dt><dd id="osName">-</dd></div>
+          <div class="l"><dt>연락처</dt><dd id="osPhone">-</dd></div>
+          <div class="l tot"><dt>결제 금액</dt><dd>55,000원</dd></div>
+        </dl>
+        <button class="btn-go" id="btnPay">결제 진행하기</button>
+        <button class="btn-ghost" id="btnBack">정보 다시 확인</button>
+        <p class="fineprint">버튼을 누르면 결제 및 예약 접수가 진행됩니다.</p>
+      </div>
+      <!-- step 2: processing -->
+      <div class="step" id="step-proc">
+        <div class="proc">
+          <div class="spinner"></div>
+          <p>결제를 진행하고 있습니다…</p>
+          <small>잠시만 기다려 주세요.</small>
+        </div>
+      </div>
+      <!-- step 3: done -->
+      <div class="step" id="step-done">
+        <div class="done">
+          <div class="done-ic"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></div>
+          <h3>예약이 접수되었습니다</h3>
+          <p class="dtxt">대표가 일정 확인 후 <b id="doneMethod">상담</b> 진행을 위해<br>입력하신 연락처로 안내드립니다.</p>
+          <div class="ono"><small>예약 번호</small><b id="orderNo">EO-000000</b></div>
+          <div class="done-actions">
+            <a class="da-kakao" href="https://pf.kakao.com/" target="_blank" rel="noopener">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="#3A1D1D"><path d="M12 3C6.5 3 2 6.6 2 11c0 2.8 1.9 5.3 4.7 6.7-.2.7-.7 2.6-.8 3 0 0 0 .3.2.4.2 0 .4 0 .4-.1.3-.2 2.8-1.9 3.6-2.5.6.1 1.2.1 1.9.1 5.5 0 10-3.6 10-8S17.5 3 12 3z"/></svg>
+              카카오톡으로 일정 확정하기
+            </a>
+            <button class="da-copy" id="btnCopy">예약 내용 복사하기</button>
+          </div>
+          <p class="fineprint" id="copyMsg">@eoacro · 010-9983-0025 로도 문의하실 수 있습니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var state = { method:"전화 상담", amount:"55,000원", channel:"" };
+
+  /* ---------- header scroll ---------- */
+  var header = document.getElementById('header');
+  var hero = document.querySelector('.hero');
+  function onScroll(){
+    var y = window.scrollY;
+    header.classList.toggle('scrolled', y > 30);
+    var pastHero = y > (hero.offsetHeight - 80);
+    header.classList.toggle('dark', !pastHero);
+    document.getElementById('stickyCta').classList.toggle('show', y > hero.offsetHeight*0.6);
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  /* ---------- reveal ---------- */
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }});
+  }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+
+  /* ---------- smooth anchor + data-goto ---------- */
+  function scrollTo(id){
+    var t = document.getElementById(id);
+    if(t) t.scrollIntoView({behavior:'smooth', block:'start'});
+  }
+  document.querySelectorAll('[data-goto]').forEach(function(b){
+    b.addEventListener('click', function(){ scrollTo(b.getAttribute('data-goto')); });
+  });
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){ e.preventDefault(); scrollTo(a.getAttribute('href').slice(1)); });
+  });
+
+  /* ---------- checklist toggle ---------- */
+  document.querySelectorAll('.check').forEach(function(c){
+    c.addEventListener('click', function(){ c.classList.toggle('on'); });
+  });
+
+  /* ---------- FAQ ---------- */
+  document.querySelectorAll('.faq-item').forEach(function(item){
+    var q = item.querySelector('.faq-q'), a = item.querySelector('.faq-a');
+    q.addEventListener('click', function(){
+      var open = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(o){ o.classList.remove('open'); o.querySelector('.faq-a').style.maxHeight=null; });
+      if(!open){ item.classList.add('open'); a.style.maxHeight = a.scrollHeight + 'px'; }
+    });
+  });
+
+  /* ---------- method selection ---------- */
+  document.querySelectorAll('#methods .m').forEach(function(m){
+    m.addEventListener('click', function(){
+      document.querySelectorAll('#methods .m').forEach(function(o){ o.classList.remove('on'); });
+      m.classList.add('on');
+      state.method = m.getAttribute('data-m');
+      document.getElementById('sumMethod').textContent = state.method;
+    });
+  });
+
+  /* ---------- form validation ---------- */
+  function field(id){ return document.getElementById(id); }
+  function fieldWrap(id){ return field(id).closest('.field'); }
+  function validate(){
+    var ok = true;
+    [['f-name'],['f-phone']].forEach(function(p){
+      var w = fieldWrap(p[0]);
+      if(!field(p[0]).value.trim()){ w.classList.add('err'); ok = false; }
+      else w.classList.remove('err');
+    });
+    if(!ok){
+      var first = document.querySelector('.field.err');
+      if(first) first.scrollIntoView({behavior:'smooth', block:'center'});
+    }
+    return ok;
+  }
+  ['f-name','f-phone'].forEach(function(id){
+    field(id).addEventListener('input', function(){ if(field(id).value.trim()) fieldWrap(id).classList.remove('err'); });
+  });
+
+  /* ---------- checkout modal ---------- */
+  var overlay = document.getElementById('overlay');
+  function showStep(id){
+    document.querySelectorAll('.step').forEach(function(s){ s.classList.remove('active'); });
+    document.getElementById(id).classList.add('active');
+  }
+  function openModal(channel){
+    state.channel = channel;
+    document.getElementById('chMethodName').textContent = channel;
+    document.getElementById('chMethodChip').textContent = channel === '카카오톡 문의' ? '문의' : '결제';
+    document.getElementById('osMethod').textContent = state.method;
+    document.getElementById('osName').textContent = field('f-name').value.trim();
+    document.getElementById('osPhone').textContent = field('f-phone').value.trim();
+    document.getElementById('modalTitle').textContent = channel === '카카오톡 문의' ? '일정 문의 확인' : '주문 확인';
+    document.getElementById('btnPay').textContent = channel === '카카오톡 문의' ? '카카오톡으로 문의 보내기' : '결제 진행하기';
+    showStep('step-confirm');
+    overlay.classList.add('show');
+    document.body.style.overflow='hidden';
+  }
+  function closeModal(){ overlay.classList.remove('show'); document.body.style.overflow=''; }
+
+  document.querySelectorAll('[data-pay]').forEach(function(b){
+    b.addEventListener('click', function(){
+      if(!validate()) return;
+      openModal(b.getAttribute('data-pay'));
+    });
+  });
+  document.getElementById('modalClose').addEventListener('click', closeModal);
+  document.getElementById('btnBack').addEventListener('click', function(){ closeModal(); field('f-name').focus(); });
+  overlay.addEventListener('click', function(e){ if(e.target === overlay) closeModal(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeModal(); });
+
+  document.getElementById('btnPay').addEventListener('click', function(){
+    showStep('step-proc');
+    document.getElementById('modalTitle').textContent = '진행 중';
+    setTimeout(function(){
+      var d = new Date();
+      var ymd = '' + d.getFullYear() + String(d.getMonth()+1).padStart(2,'0') + String(d.getDate()).padStart(2,'0');
+      var rnd = Math.random().toString(36).slice(2,6).toUpperCase();
+      var no = 'EO-' + ymd + '-' + rnd;
+      document.getElementById('orderNo').textContent = no;
+      document.getElementById('doneMethod').textContent = state.method;
+      document.getElementById('modalTitle').textContent = '예약 완료';
+      showStep('step-done');
+      window.__booking = '[EO ACRO 대표 진단 상담 예약]\n예약번호: ' + no +
+        '\n상품: 대표 진단 상담 (55,000원)' +
+        '\n상담방식: ' + state.method +
+        '\n예약자: ' + field('f-name').value.trim() +
+        '\n연락처: ' + field('f-phone').value.trim() +
+        (field('f-type').value ? '\n공간유형: ' + field('f-type').value : '') +
+        (field('f-area').value.trim() ? '\n면적: ' + field('f-area').value.trim() : '') +
+        (field('f-concern').value.trim() ? '\n고민: ' + field('f-concern').value.trim() : '') +
+        (field('f-time').value.trim() ? '\n희망시간: ' + field('f-time').value.trim() : '');
+    }, 1700);
+  });
+
+  document.getElementById('btnCopy').addEventListener('click', function(){
+    var txt = window.__booking || '';
+    var done = function(){
+      var m = document.getElementById('copyMsg');
+      m.textContent = '✓ 복사되었습니다. 카카오톡(@eoacro)으로 붙여넣어 보내주세요.';
+      m.style.color = 'var(--amber)';
+    };
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(txt).then(done, function(){ fallbackCopy(txt); done(); });
+    } else { fallbackCopy(txt); done(); }
+  });
+  function fallbackCopy(txt){
+    var ta = document.createElement('textarea'); ta.value = txt;
+    ta.style.position='fixed'; ta.style.opacity='0'; document.body.appendChild(ta);
+    ta.select(); try{ document.execCommand('copy'); }catch(e){} document.body.removeChild(ta);
+  }
+})();
+</script>
+</body>
+</html>
